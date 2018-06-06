@@ -59,8 +59,73 @@ main{
   color: #333;
   transition: background 500ms ease;
   }
-}
+
 
 .btn:hover{
   background: #f4f4f4;
+}
+
+#header{
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+#header h2{
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+}
+
+#landing-image{
+  background: url(https://source.unsplash.com/De8wMYoSSBc);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+.caption{
+  padding: 0.8rem;
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3{
+  font-size: 3rem;
+  margin-bottom: 0px;
+}
+
+/*screen sizes 500px up */
+
+@media (min-width: 500px) {
+  #landing{
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text, #landing-image{
+    height: 100vh;
+  }
+}
+
+/*screen sizes 700px up */
+
+@media (min-width: 700px){
+
+  .btn{
+    padding: 1rem 3rem;
+  }
 }
